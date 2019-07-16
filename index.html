@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		lesson3 home task
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+	var age=prompt('Сколько вам лет?')
+	age=Number(age);
+	console.log(age);
+	var ageLengthText=age+'';
+	var ageLength=ageLengthText.length;
+	var lastChar20_99=(ageLengthText[1]);
+	var lastChar100_122=(ageLengthText[2]);
+	if (age==0){
+		alert('Вы ничего не ввели, или вам меньше одного года!');
+	}
+	else if (123>age&&age>0){
+		if (ageLength==1){
+			if (age==1) {
+			alert(age+' год');
+			}
+			else if (5>age&&age>1){
+			alert(age+' года');
+			}
+			else {
+			alert(age+' лет');
+			}		
+		}
+		else if (ageLength==2){
+			if (20>age&&age>=11) {
+				alert(age+' лет');
+			}
+			else {
+				if (lastChar20_99==1){
+				alert(age+' год');
+				}
+				else if(5>lastChar20_99&&lastChar20_99>1){
+				alert(age+' года');
+				}
+				else {
+				alert(age+' лет');
+				}
+			}
+		}
+		else {
+			if (120>age&&age>=111) {
+				alert(age+' лет');
+			}
+			else {
+				if (lastChar100_122==1){
+				alert(age+' год');
+				}
+				else if(5>lastChar100_122&&lastChar100_122>1){
+				alert(age+' года');
+				}
+				else {
+				alert(age+' лет');
+				}
+			}
+		}
+	}
+	else if (age>=123){ //max age of the inhabitant planet earth
+		alert('Это невозможно, столько не живут!');
+	}
+	else {
+		alert('Некорректный ввод! Введите, пожалуйста, числовое значение, сколько вам полный лет!');
+	}
+</script>
+</body>
+</html>
